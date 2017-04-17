@@ -1,0 +1,44 @@
+html{
+	background-color: #400;
+}
+body{
+	width: 400px;
+	margin: 0 auto;
+	background: #fff;
+	height:100vh;
+}
+#pBody{
+   margin-left: auto;
+	margin-right: auto;
+}
+form{
+	background-color: white;
+	padding: 20px;
+	/*height: 80%;*/
+}
+h1{
+	background-color: white;
+	font-size: 60px;
+   margin: 20px;
+}
+label{
+	font-size: 20px;
+}
+input{
+	width: 350px;
+	height: 50px;
+	border-radius: 5px;
+	font-size: 30px;
+}
+button{
+	width: 350px;
+	height: 50px;
+   font-size: 30px;
+}
+p{
+	padding-left: 22px;
+	font-size: 30px;
+}
+.Bolt{
+	font: bold 24px/150% Arial, Helvetica, sans-serif;
+}
