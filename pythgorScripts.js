@@ -9,23 +9,23 @@ function square(x){
 	
 	return x*x;
 }
-function check(){
+function check(num1, num2){
 	console.log("Check() invoked");
-	if(isNaN($side1)){
-		$side1 = undefined;
+	if(isNaN(num1)){
+		num1 = undefined;
 		alert("please insert a number!");
-	} else if(isNaN($side2)){
-		$side2 = undefined;
+	} else if(isNaN(num2)){
+		num2 = undefined;
 		alert("please insert a number!");
-	} else {
-		$sy1 += value;
-		$sy2 += value;
-	}
+	} /*else {
+		num1 += value;
+		num2 += value;
+	}*/
 	
 }
-function squareRoot(){
-	console.log("squareRoot() invoked");
-	var sq = square($side1) + square($side2);
+function hypotenuse(n1, n2){
+	console.log("hypotenuse() invoked");
+	var sq = square(n1) + square(n2);
    return Math.sqrt(sq);
 }
 
@@ -33,7 +33,7 @@ $form.onsubmit = function submit(e){
 	console.log("submit() invoked");
 	e.preventDefault();
 	$hypotenuse.innerHTML = $side1 + $side2;
-	squareRoot();
-	check();
+	hypotenuse($side1, $side2);
+	check($side1, $side2);
 	$form.reset();
 };
